@@ -60,7 +60,7 @@ app.use(router(event => {
 		event.post('/account', account.createAccount),
 		event.put('/account', account.updateAccount),
 		event.delete('/account', account.deleteAccount).account,
-		event.post('/findUser', account.findUserById),
+		event.post('/findUser', account.findUser),
 		//Cart
 		event.get('/cart', cart.getCart),
 		event.post('/cart', cart.createCart),
