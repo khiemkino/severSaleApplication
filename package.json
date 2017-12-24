@@ -1,9 +1,9 @@
 {
-  "name": "koa-demo",
+  "name": "arigatou_server",
   "version": "0.0.1",
-  "description": "A Demo Rest API written in Koa.js.",
+  "description": "First launch sever arigatou sale application",
   "main": "app.js",
-  "author": "Alex Allen",
+  "author": "khiemkino",
   "license": "MIT",
   "scripts": {
     "start": "node app.js"

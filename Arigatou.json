@@ -1,0 +1,117 @@
+{
+	"id": "42fd0e15-6284-eb81-8d33-4be3418da9a4",
+	"name": "Arigatou Postman",
+	"description": "",
+	"order": [
+		"612177ae-d022-6d07-5b4e-803bce10a75d",
+		"a8bdd30f-d762-3ce0-e8c3-998ae248b1a7",
+		"c8bc2c08-1b75-ac0b-d17e-d823aaeef37a",
+		"ab80da42-573f-f20d-90aa-7e37fb75af9e"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 0,
+	"owner": "2410810",
+	"public": false,
+	"events": [],
+	"variables": [],
+	"auth": null,
+	"requests": [
+		{
+			"id": "612177ae-d022-6d07-5b4e-803bce10a75d",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/sayhello",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"auth": null,
+			"time": 1513901904290,
+			"name": "Say hello",
+			"collectionId": "42fd0e15-6284-eb81-8d33-4be3418da9a4",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "a8bdd30f-d762-3ce0-e8c3-998ae248b1a7",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/product",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"auth": null,
+			"time": 1513901895158,
+			"name": "Get All Product",
+			"collectionId": "42fd0e15-6284-eb81-8d33-4be3418da9a4",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "ab80da42-573f-f20d-90aa-7e37fb75af9e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/product",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"auth": null,
+			"time": 1513901967632,
+			"name": "Update Product",
+			"collectionId": "42fd0e15-6284-eb81-8d33-4be3418da9a4",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"name\": \"New Product\",\n\t\"newName\": \"Lovelovelove\"\n}"
+		},
+		{
+			"id": "c8bc2c08-1b75-ac0b-d17e-d823aaeef37a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/product",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"auth": null,
+			"time": 1513900916199,
+			"name": "Create Product",
+			"collectionId": "42fd0e15-6284-eb81-8d33-4be3418da9a4",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n\t\"name\": \"New Product\",\n\t\"price\": 30,\n\t\"information\":\"New Product\",\n\t\"image\":\"\",\n\t\"size\":[20,30,40],\n\t\"category\":\"New Category\",\n\t\"amount\":100\n}"
+		}
+	]
+}
