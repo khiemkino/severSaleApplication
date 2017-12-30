@@ -17,7 +17,8 @@ exports.createProduct = async (ctx) => {
 		image:ctx.request.body.image,
 		size:ctx.request.body.size,
 		category:ctx.request.body.category,
-		amount:ctx.request.body.amount
+		amount:ctx.request.body.amount,
+		rating:ctx.request.body.rating
 	})
 	if (!result) {
 		throw new Error('Product create failed.')
@@ -35,7 +36,8 @@ exports.updateProduct = async (ctx) => {
 		image:ctx.request.body.newImage,
 		size:ctx.request.body.newSize,
 		category:ctx.request.body.newCategory,
-		amount:ctx.request.body.newAmount
+		amount:ctx.request.body.newAmount,
+		rating:ctx.request.body.newRating
 	}
 	const result = await Product.findOneAndUpdate(searchByName, update)
 	if (!result) {

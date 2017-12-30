@@ -59,11 +59,16 @@ exports.deleteAccount = async (ctx) => {
 }
 
 exports.findUser = async (ctx) => {
-	const result = await Account.find({username: ctx.request.body.username})
-	if (!result) {
+	let result = await Account.find({email: ctx.request.body.emailPhone,
+		password:ctx.request.body.password})
+
+	if(result.length===0){
+		result = await Account.find({phone: ctx.request.body.emailPhone,password:ctx.request.body.password})
+	}
+	if (result.length===0) {
 		throw new Error('Account not yet register.')
 	} else {
 		ctx.status = 200
-		ctx.body = {message: 'success!',data:result}
+		ctx.body = {message: 'success!',data:result[0]}
 	}
 }
