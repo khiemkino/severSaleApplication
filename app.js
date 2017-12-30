@@ -16,8 +16,8 @@ const app = new koa()
 // Mongoose Config
 mongoose.Promise = require('bluebird')
 mongoose
-	// .connect('mongodb://khiemkino:khiemhaha@ds161146.mlab.com:61146/arigatou_server')
-	.connect('mongodb://localhost:27017/arigatou')
+	.connect('mongodb://khiemkino:khiemhaha@ds161146.mlab.com:61146/arigatou_server')
+	// .connect('mongodb://localhost:27017/arigatou')
 	.then((response) => {
 		console.log('mongo connection created')
 	})
